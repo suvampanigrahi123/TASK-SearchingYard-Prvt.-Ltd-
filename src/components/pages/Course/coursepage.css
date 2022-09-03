@@ -1,0 +1,92 @@
+.Searchbox{
+    margin: 3vmax;
+    width: 90vw;
+    max-width: 100%;
+}
+.Searchbox>form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.Searchbox>form>input[type="text"]{
+    width: 70%;
+    outline: none;
+    padding: 0.5vmax 1vmax;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 0.5vmax;
+    font: 400 1.5vmax "Roboto";
+}
+.Searchbox>form>button{
+    padding: 0.8vmax 1.4vmax;
+    outline: none;
+    background-color:  #0000FF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.Searchbox>form>button:hover{
+    background-color: tomato;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vmax;
+    flex-wrap: wrap;
+}
+.CoursesNotFound{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CoursesNotFound>h1{
+    font: 400 2.5vmax "Roboto";
+    color: rgba(0, 0, 0, 0.678);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vmax;
+}
+.CategoryBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 28%;
+    left: 0%;
+}
+.CategoryBox>h3{
+    font: 400 1.5vmax "Roboto";
+    text-align: center;
+}
+.CategoryBox>select{
+    text-align: center;
+    width: 18vmax;
+    font: 400 1.2vmax Roboto;
+    margin-left: 1vmax;
+}
+@media screen and (max-width:600px) {
+    .CoursesNotFound>h1{
+        font: 400 3.5vmax "Roboto";
+    }
+    .Searchbox>form>input[type="text"]{
+        font: 400 2.1vmax "Roboto";
+    }
+    .CategoryBox{
+        top: 25%;
+    }
+    .CategoryBox>h3{
+        font: 400 2vmax Roboto;
+    }
+    .CategoryBox>select{
+        width: 90%;
+        font: 400 1.5vmax "Roboto";
+    }
+}

@@ -1,0 +1,57 @@
+.Card{
+    width: 18vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vmax;
+    padding: 0.5vmax;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: rgb(48, 48, 48);
+}
+.Card:hover{
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    transform: translateY(-1vmax);
+}
+.Card>img{
+    width: 18vmax;
+    height: 19vmax;
+}
+.Card>p{
+    font: 400 1.4vmax "Roboto";
+    margin: 0.9vmax;
+    text-align: center;
+}
+.Card>span,.Card>div:last-child>span{
+    justify-self: flex-start;
+    color: tomato;
+    font: 400 1.3vmax "Roboto";
+    margin: 0.7vmax;
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .Card{
+        width: 22vmax;
+    }
+    .Card>img{
+        width: 22vmax;
+        height: 22vmax;
+    }
+    .Card>p{
+        font: 400 1.7vmax "Roboto";
+    }
+    .Card>span{
+        justify-self: flex-start;
+        color: tomato;
+        font: 400 2vmax "Roboto";
+        margin: 0.7vmax;
+    }
+    .Card>div>span{
+        font: 400 1.5vmax "Roboto";
+    }
+}

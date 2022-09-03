@@ -1,0 +1,85 @@
+.banner{
+    background-image: linear-gradient(blue,green);
+    height: 87vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner>p{
+    font:400 1.9vmax "Roboto";
+}
+.banner>h1{
+    font: 400 2.5vmax "Roboto";
+    margin: 5vmax;
+}
+.banner>a>button{
+    padding: 1vmax 1.5vmax;
+    width: 9vmax;
+    font: 400 1vmax "Roboto";
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.banner>a>button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 87vmin;
+    width: 100%;
+    max-width: 100%;
+    -webkit-clip-path: polygon(100% 70%, 100% 70%, 100% 100%, 0 100%, 100% 75%);
+    clip-path: polygon(100% 70%, 100% 70%, 100% 100%, 0 100%, 100% 75%);
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 1vmax;
+    border-bottom: 1px solid black;
+    width: 35%;
+    margin: auto;
+}
+.CourseContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vmax;
+    flex-wrap: wrap;
+}
+
+.btnlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2vmax;
+}
+.btnlink button{
+    padding: 1.2vmax 3.1vmax;
+    background-color: tomato;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btnlink button:hover{
+    background-color:transparent ;
+    color: black;
+    border: 1px solid black;
+}
+@media screen and (max-width:600px) {
+    .banner>a>button{
+        font: 400 2.1vw "Roboto";
+        width: 12vmax;
+        padding: 1.5vmax 2.5vmax;
+    }
+    .heading{
+        font: 400 4.5vw "roboto";
+    }
+}
